@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload"    href="../styles/styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap">   
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/styles.css" as="style">
+    <link rel="icon"       href="../img/logoPag.png" type="image/png"> 
+    <title>Perfil</title>
+</head>
+<body>
+    <nav class="navegacion ">
+        <a ><img class="logo" src="../img/logo.png" alt="logo de la pagina"></a>
+        <a href="index.html"           class="opcion">Inicio</a>
+        <a href="Productos.html"       class="opcion">Productos</a>
+        <a href="WishList.html"        class="opcion">Lista de Deseos</a>
+        <a href="Nosotros.html"        class="opcion">Nosotros</a>
+        <a href="Profile.html"         class="opcion">Perfil</a>            
+    </nav>
+
+    <h1>Bienvenido [Luis]</h1>
+
+    <main class="contenedor">
+
+    </main>
+
+    <div class="contenedor-perfil">
+        <h3 class="">Tus Pedidos</h3>
+            <div class="info-perso">
+                <button onclick="window.modal1.showModal();" class="bloquemod grid-perfil">
+                    <div class="titulo-bloque"><h4 class="titulo-bloque"></h4></div>
+                    <p class="info-perso"> Rastrea tus pedidos, devolver pedidos o compra algo nuevo en la tienda</p>
+                    </button>
+                <dialog id="modal1" class="modal">
+                    <h3>Mis pedidos</h3>
+                    <form class="formulario">
+                        <fieldset class="contenedor">
+                            <label class="user-info">Pedido Realizado</label>
+                            <input type="date" class="input-perfil" value="Fecha de pedido" />
+                            
+                            <label class="user-info">Total:</label>
+                            <input type="number" class="input-perfil" value="$xxx.xx" />
+                            
+                            <label class="user-info">Enviar A</label>
+                            <input type="text" class="input-perfil">
+                            
+                            <button onclick="window.modal3.showModal();" class="user-info">Realizar seguimiento de paquete</button>
+                            <dialog id="modal3" class="modal">
+                                <p class="info-perso">Su paquete se encuentra en camino</p>
+                                <progress class="user-info" min="0" max="100" value="80" >80/100</progress>
+                                <button onclick="window.modal3.close();" class="cancelar">Cerrar</button>
+                                </dialog>
+                        </fieldset>
+                    </form>
+                <button onclick="window.modal1.close();" class="cancelar">Cancelar</button>
+                <button class="guardar">Guardar</button>
+                </dialog>
+            </div>
+    </div>
+    <div class="contenedor-perfil">
+        <h3 class="">Información Personal</h3>
+            <div class="info-perso">
+                <button onclick="window.modal2.showModal();" class="bloquemod grid-perfil">
+                    <div class="titulo-bloque"><h4 class="titulo-bloque">Inicio de Sesión y seguridad</h4></div>
+                    <p class="info-perso"> Cambia de correo electrónico, contraseña y número de teléfono</p>
+                    </button>
+                <dialog id="modal2" class="modal">
+                    <h3>Inicio de Sesion y seguridad</h3>
+                    <form class="formulario">
+                        <fieldset class="contenedor">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="input-perfil" value="Nombre del Usuario" />
+                            
+                            <label class="user-info">Correo Electrónico:</label>
+                            <input type="email" class="input-perfil" value="correo@example.com" />
+                            
+                            <label for="contrasena-actual">Contraseña Actual:</label>
+                            <input type="password" class="input-perfil">
+                            
+                            <label for="nueva-contrasena">Nueva Contraseña:</label>
+                            <input type="password" class="input-perfil">
+                            
+                            <label for="confirmar-contrasena">Confirmar Nueva Contraseña:</label>
+                            <input type="password" class="input-perfil">
+                            <button onclick="">Cambiar Contraseña</button>
+                        </fieldset>
+                    </form>
+                <button onclick="window.modal2.close();" class="cancelar">Cancelar</button>
+                <button class="guardar">Guardar</button>
+                </dialog>
+            </div>
+    </div>
+
+    
+    <footer class="footer">
+        <section class="contacto">
+            <div class="container">
+                <div class="container rectangulo">
+                    <div class="row">
+                        <div class="descripcion">¡Contactanos para recibir asesoramiento!</div>
+                        <a href="#">
+                            <button type="button">WhatsApp
+                                <i class="bi bi-whatsapp"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="footer_texto"> PetsFamily -- Todos los derechos reservados a Ivanna Guzman - Luis Rios 2023 &#169</p>  
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../styles/styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/styles.css" as="style">
+    <link rel="icon" href="../img/logoPag.png" type="image/png"> 
+    <title>Reportes de Venta</title>
+</head>
+<body>
+    <nav class="navegacion">
+        <a ><img class="logo" src="../img/logo.png" alt="logo de la pagina"></a>
+        <a href="index.html" class="opcion">Inicio</a>
+        <a href="GestorUsuarios.html" class="opcion">Gestor de Usuarios</a>
+        <a href="GestorProductos.html" class="opcion">Gestor de Productos</a>
+        <a href="Reportes.html" class="opcion">Generar Reportes</a>
+        <a href="" class="opcion"></a>
+    </nav>
+    <main class="contenedor">
+        <h2 class="h-opciones">Reporte de Ventas</h2>
+        <h3 class="h-opciones">Opciones</h3>
+        <button onclick="window.modal1.showModal();" class="opcionabc">Dia</button>
+            <dialog id="modal1" class="modal"> <!-- El id se utiliza para identificar de manera única un elemento en una página web. 
+                Sirve para darle un nombre único a un elemento específico, 
+                lo que permite que sea referenciado y manipulado mediante estilos CSS, 
+                scripts de JavaScript u otros mecanismos de interacción. -->
+                <p>Seleccione el dia para realizar el reporte</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="date" class="input-text" placeholder="Dia" step="1">
+                    </fieldset>
+                </form>
+                <button onclick="window.modal1.close();" class="cancelar">Cancelar</button>
+                <button class="guardar">Guardar</button>
+            </dialog>
+        <button onclick="window.modal2.showModal();" class="opcionabc">Semana</button>
+        <dialog id="modal2" class="modal">
+            <p>Seleccione la semana para realizar el reporte</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="week" class="input-text" placeholder="Semana">
+                    </fieldset>
+                </form>
+            <button onclick="window.modal2.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+        <button onclick="window.modal3.showModal();" class="opcionabc">Mes</button>
+        <dialog id="modal3" class="modal">
+            <p>Seleccione el Mes</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="month" class="input-text" placeholder="Mes">
+                    </fieldset>
+                </form>
+            <button onclick="window.modal3.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+        <button onclick="window.modal4.showModal();" class="opcionabc">Año</button>
+        <dialog id="modal4" class="modal">
+            <p>Seleccione el Año</p>
+            <form class="formulario">
+                <fieldset class="contenedor">
+                    <input type="year" class="input-text" placeholder="Año">
+                </fieldset>
+            </form>
+            <button onclick="window.modal4.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+    </main>
+</body>
+</html>

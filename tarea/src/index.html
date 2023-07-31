@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload"    href="../styles/styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap">   
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/styles.css" as="style">
+    <link rel="icon"       href="../img/logoPag.png" type="image/png"> 
+    <title>PetsFamily</title>
+</head>
+<body>
+    <nav class="navegacion">
+        <a href="index.html"><img class="logo" src="../img/logo.png" alt="logo de la pagina"></a>
+        <a href="index.html"           class="opcion">Inicio</a>
+        <a href="indexAdmin.html"      class="opcion">Administracion</a>
+        <a href="Productos.html"       class="opcion">Productos</a>
+        <a href="WishList.html"        class="opcion">Lista de Deseos</a>
+        <a href="Profile.html"         class="opcion">Perfil</a>
+        <a href="Nosotros.html"        class="opcion">Nosotros</a>
+        <a href="Login.html"           class="opcion derecha">Iniciar Sesion</a>
+        <a href="Registrarse.html"     class="opcion derecha">Registrarse</a>
+        
+    </nav>
+    
+    <input type="search" class="contenedor-search" placeholder="Buscar en PetsFamily.com">
+
+    <main class="contenedor">
+        <h1> Hola, bienvenido a PestFamily </h1>
+        <div class="producto">
+            <div class="categoria">
+                <a href="productosperro.html">
+                    <img class="producto_img" src="../img/perro.jpg" alt="imagen perro" >
+                    <div class="producto_informacion">
+                        <p class="producto_nombre" href="productosperro.html"> Accesorios para tus perros </p>
+                    </div>
+                </a>       
+            </div>
+            <div class="categoria">
+                <a href="productosgato.html">
+                    <img class="producto_img" src="../img/gato.jpg" alt="imagen gato" >
+                    <div class="producto_informacion">
+                        <p class="producto_nombre" href="productosgato.html"> Accesorios para tus gatos </p>
+                    </div>
+                </a>
+            </div>
+            <div class="categoria">
+                <a href="comidagato.html">
+                    <img class="producto_img" src="../img/gatocomiendo.jpg" alt="imagen gato" >
+                    <div class="producto_informacion">
+                        <p class="producto_nombre" href="comidagato.html"> Comida para tus gatos </p>           
+                    </div>
+                </a>
+            </div>
+            <div class="categoria">
+                <a href="comidaperro.html">
+                    <img class="producto_img" src="../img/perrocomiendo.jpg" alt="imagen gato" >
+                    <div class="producto_informacion">
+                        <p class="producto_nombre" href="comidaperro.html"> Comida para tus perros </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="juguetes_img">
+            <a href="juguetes.html">
+                <div class="producto_informacion">
+                    <img class="producto--juguete" src="../img/gatoperro.jpg" alt="gato y perro">
+                    <p class="producto_nombre" href="juguetes.html"> Juguetes para tus mascotas </p>                  
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <section class="contacto">
+            <div class="container">
+                <div class="container rectangulo">
+                    <div class="row">
+                        <div class="descripcion">¡Contactanos para recibir asesoramiento!</div>
+                        <a href="#">
+                            <button type="button">WhatsApp
+                                <i class="bi bi-whatsapp"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="footer_texto"> PetsFamily -- Todos los derechos reservados a Ivanna Guz - Luis Rios 2023 &#169</p>  
+    </footer>
+</body>
+</html>

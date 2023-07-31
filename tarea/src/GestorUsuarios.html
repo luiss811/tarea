@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../styles/styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/styles.css" as="style">
+    <link rel="icon" href="../img/logoPag.png" type="image/png"> 
+    <title>Gestor de Usuarios</title>
+</head>
+<body>
+    <nav class="navegacion">
+        <a ><img class="logo" src="../img/logo.png" alt="logo de la pagina"></a>
+        <a href="index.html" class="opcion">Inicio</a>
+        <a href="GestorUsuarios.html" class="opcion">Gestor de Usuarios</a>
+        <a href="GestorProductos.html" class="opcion">Gestor de Productos</a>
+        <a href="Reportes.html" class="opcion">Generar Reportes</a>
+        <a href="" class="opcion"></a>
+    </nav>
+    <main class="contenedor">
+        <h2 class="h-opciones">Opciones</h2>
+        <button onclick="window.modal1.showModal();" class="opcionabc">Agregar Usuario</button>
+            <dialog id="modal1" class="modal">
+                <p>Agregar Usuario Nuevo</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="text" class="input-text" placeholder="Nombre">
+                        <input type="text" class="input-text" placeholder="Apellido">
+                        <input type="number" class="input-text" placeholder="Edad" min="18">
+                        <input type="email" class="input-text" placeholder="Correo electronico">
+                        <input type="password" class="input-text" placeholder="Contraseña">
+                        <input type="number" class="input-text" placeholder="Nivel" min="0" max="2">
+                    </fieldset>
+                </form>
+                <button onclick="window.modal1.close();" class="cancelar">Cancelar</button>
+                <button class="guardar">Guardar</button>
+            </dialog>
+        <button onclick="window.modal2.showModal();" class="opcionabc">Eliminar Usuario</button>
+        <dialog id="modal2" class="modal">
+            <p>Eliminar Usuario</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="search" class="input-text" placeholder="Nombre">
+                    </fieldset>
+                </form>
+            <button onclick="window.modal2.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+        <button onclick="window.modal3.showModal();" class="opcionabc">Modificar Nivel de Usuario</button>
+        <dialog id="modal3" class="modal">
+            <p>Modificar Privilegios de Usuario</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <p class="nivel">Nivel 0 Bloquear Usuario</p>
+                        <p class="nivel">Nivel 1 Usuario</p>
+                        <p class="nivel">Nivel 2 Administrador</p>
+                        <input type="search" class="input-text" placeholder="Correo electronico">
+                        <input type="number" class="input-text" placeholder="Nivel" min="0" max="2">
+                    </fieldset>
+                </form>
+            <button onclick="window.modal3.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+        <button onclick="window.modal5.showModal();" class="opcionabc">Generar Reporte</button>
+        <dialog id="modal5" class="modal">
+            <p>Generar Reporte de Usuario</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="search" class="input-text" placeholder="Nombre">
+                        <input type="email" class="input-text" placeholder="Correo electronico">
+                        
+                    </fieldset>
+                </form>
+            <button onclick="window.modal5.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+    </main>
+    
+    <section>
+        <div class="usuarios grid">
+            <div class="usuario">
+                <h4>Usuario 1</h3>
+                <p class="user-info">
+                    Nombre: Luis
+                    Apellido: Rios
+                    Edad: 19 años
+                    correo electronico: lalitorios81@gmail.com
+                </p>
+            </div>
+            <div class="usuario">
+                <h4>Usuario 2</h4>
+                <p class="user-info">
+                    Nombre: Ivanna
+                    Apellido: Guzman
+                    Edad: 18 años
+                    correo electronico: @gmail.com
+                </p>
+            </div>
+            <div class="usuario">
+                <h4>Usuario 3</h4>
+                <p class="user-info">
+                    Nombre: Santiago
+                    Apellido: Rios
+                    Edad: 17 años
+                    correo electronico: santiago@gmail.com
+                </p>
+            </div>
+            <div class="usuario">
+                <h4>Usuario 4</h4>
+                <p class="user-info">
+                    Nombre: 
+                    Apellido: 
+                    Edad:  años
+                    correo electronico: @gmail.com
+                </p>
+            </div>
+            <div class="usuario">
+                <h4>Usuario 5</h4>
+                <p class="user-info">
+                    Nombre: Vanesa
+                    Apellido: Guzman
+                    Edad: 16 años
+                    correo electronico: vanesa@gmail.com
+                </p>
+            </div>
+            <div class="usuario">
+                <h4>Usuario 6</h4>
+                <p class="user-info">
+                    Nombre: Pamela
+                    Apellido: Cervantes
+                    Edad: 40 años
+                    correo electronico: pamela@gmail.com
+                </p>
+            </div>
+            <div class="usuario">
+                <h4>Usuario 7</h4>
+                <p class="user-info">
+                    Nombre: Mauricio
+                    Apellido: Reyes
+                    Edad: 45 años
+                    correo electronico: mauricio@gmail.com
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./galeria.js"></script>
+</body>
+</html>

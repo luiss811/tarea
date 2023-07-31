@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../styles/styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/styles.css" as="style">
+    <link rel="icon" href="../img/logoPag.png" type="image/png"> 
+    <title>Gestor de Productos</title>
+</head>
+<body>
+    <nav class="navegacion">
+        <a href="GestorProductos.html"><img class="logo" src="../img/logo.png" alt="logo de la pagina"></a>
+        <a href="index.html" class="opcion">Inicio</a>
+        <a href="GestorUsuarios.html" class="opcion">Gestor de Usuarios</a>
+        <a href="GestorProductos.html" class="opcion">Gestor de Productos</a>
+        <a href="Reportes.html" class="opcion">Generar Reportes</a>
+        <a href="" class="opcion"></a>
+    </nav>
+
+
+    <main class="contenedor">
+        <h2 class="h-opciones">Opciones</h2>
+        <button onclick="window.modal1.showModal();" class="opcionabc">Agregar Producto</button>
+            <dialog id="modal1" class="modal"> <!-- El id se utiliza para identificar de manera única un elemento en una página web. 
+                Sirve para darle un nombre único a un elemento específico, 
+                lo que permite que sea referenciado y manipulado mediante estilos CSS, 
+                scripts de JavaScript u otros mecanismos de interacción. -->
+                <p>Agregar un Producto nuevo</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="text" class="input-text" placeholder="Nombre">
+                        <input type="text" class="input-text" placeholder="Precio">
+                        <input type="text" class="input-text" placeholder="Cantidad">
+                        <input type="text" class="input-text" placeholder="Categoria">
+                        <input type="text" class="input-text" placeholder="Imagen">
+                    </fieldset>
+                </form>
+                <button onclick="window.modal1.close();" class="cancelar">Cancelar</button>
+                <button class="guardar">Guardar</button>
+            </dialog>
+        <button onclick="window.modal2.showModal();" class="opcionabc">Eliminar Producto</button>
+        <dialog id="modal2" class="modal">
+            <p>Eliminar Producto</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="text" class="input-text" placeholder="Nombre">
+                        <input type="text" class="input-text" placeholder="Categoria">
+                    </fieldset>
+                </form>
+            <button onclick="window.modal2.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+        <button onclick="window.modal3.showModal();" class="opcionabc">Modificar Producto</button>
+        <dialog id="modal3" class="modal">
+            <p>Modificar Producto</p>
+                <form class="formulario">
+                    <fieldset class="contenedor">
+                        <input type="text" class="input-text" placeholder="Nombre">
+                        <input type="text" class="input-text" placeholder="Precio">
+                        <input type="text" class="input-text" placeholder="Cantidad">
+                        <input type="text" class="input-text" placeholder="Categoria">
+                        <input type="text" class="input-text" placeholder="Imagen">
+                    </fieldset>
+                </form>
+            <button onclick="window.modal3.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+        <button onclick="window.modal4.showModal();" class="opcionabc">Generar Reporte</button>
+        <dialog id="modal4" class="modal">
+            <p>¿Estás seguro de eliminar las imágenes seleccionadas?</p>
+            <button onclick="window.modal4.close();" class="cancelar">Cancelar</button>
+            <button class="guardar">Guardar</button>
+        </dialog>
+    </main>
+</body>
+</html>
